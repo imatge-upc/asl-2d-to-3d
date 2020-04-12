@@ -2,27 +2,27 @@
 Right now, I am not using the whole dataset in order to speed up this minor tests, when we decide the final model I will use the full dataset. I am currently using 10 folders out of 24 (which, if we count 2 signers per recording in a folder means 20 out of 48 videos). 
 ## List
 First, to train with just one signer, I use signer with id "0" in folders 190425_aslX.
-- [**OneSingle_kp**](../LSTM_2D_to_3D-OneSingle_kp.ipynb): Training for a single keypoint estimation (in this case body left shoulder keypoint) with videos from just one signer. 
+- [**OneSingle_kp**](../Notebooks/LSTM_2D_to_3D-OneSingle_kp.ipynb): Training for a single keypoint estimation (in this case body left shoulder keypoint) with videos from just one signer. 
   - Using: 6 folders; 6 videos; 1 signer.
 
-- [**One**](../LSTM_2D_to_3D-One.ipynb): Training for the whole keypoint set estimation with videos from just one signer. 
+- [**One**](../Notebooks/LSTM_2D_to_3D-One.ipynb): Training for the whole keypoint set estimation with videos from just one signer. 
   - Using: 6 folders; 6 videos; 1 signer.
 
 Then, I train with all signers in the 10 folders mentioned above.
-- [**LotSingle_kp**](../LSTM_2D_to_3D-LotSingle_kp.ipynb): Training for a single keypoint estimation (in this case body left shoulder keypoint) with videos from 5 different signers. 
+- [**LotSingle_kp**](../Notebooks/LSTM_2D_to_3D-LotSingle_kp.ipynb): Training for a single keypoint estimation (in this case body left shoulder keypoint) with videos from 5 different signers. 
   - Using: 10 folders; 20 videos; 5 signers (3 videos, 3 videos, 6 videos, 5 videos and 3 videos, respectively).
 
-- [**Lot**](../LSTM_2D_to_3D-Lot.ipynb): Training for the whole keypoint set estimation with videos from 5 different signers. 
+- [**Lot**](../Notebooks/LSTM_2D_to_3D-Lot.ipynb): Training for the whole keypoint set estimation with videos from 5 different signers. 
   - Using: 10 folders; 20 videos; 5 signers (3 videos, 3 videos, 6 videos, 5 videos and 3 videos, respectively).
 
 Finally, I created training notebooks with estimation for either just face keypoints, hands keypoints or body keypoints.
-- [**Face**](../LSTM_2D_to_3D-Face.ipynb): Training for face keypoints estimation with videos from 5 different signers.
+- [**Face**](../Notebooks/LSTM_2D_to_3D-Face.ipynb): Training for face keypoints estimation with videos from 5 different signers.
   - Using: 10 folders; 20 videos; 5 signers (3 videos, 3 videos, 6 videos, 5 videos and 3 videos, respectively).
 
-- [**Hands**](../LSTM_2D_to_3D-Hands.ipynb): Training for hands keypoints estimation with videos from 5 different signers.
+- [**Hands**](../Notebooks/LSTM_2D_to_3D-Hands.ipynb): Training for hands keypoints estimation with videos from 5 different signers.
   - Using: 10 folders; 20 videos; 5 signers (3 videos, 3 videos, 6 videos, 5 videos and 3 videos, respectively).
 
-- [**Body**](../LSTM_2D_to_3D-Body.ipynb): Training for body keypoints estimation with videos from 5 different signers.
+- [**Body**](../Notebooks/LSTM_2D_to_3D-Body.ipynb): Training for body keypoints estimation with videos from 5 different signers.
   - Using: 10 folders; 20 videos; 5 signers (3 videos, 3 videos, 6 videos, 5 videos and 3 videos, respectively).
   
 ## Metric
