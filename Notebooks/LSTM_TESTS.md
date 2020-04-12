@@ -32,6 +32,8 @@ The metric I use to evaluate the performance is the Mean Per Joint Position Erro
 
 To have an idea of whether an MPJPE score is good or not, I have created the notebook `Stats.ipynb`. On that notebook I output the max, min, and mean z-distance between the keypoints within an skeleton, for every video used on the LSTMs.
 
+*Note: For the face I use nose tip as root keypoint, in the case of the hands I use the keypoint closest to the wrist and for the body I use the middle hip keypoint.*
+
 ## Results and conclusion
 It appears that in every case the LSTM learns something since the training and validation losses decrease along the epochs, and the MPJPE scores when using 5 different signers seem to be good (either using all the keypoints or just face, hands or body). 
 
